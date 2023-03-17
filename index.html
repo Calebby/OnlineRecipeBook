@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <!-- Link the Tailwind CSS stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <!-- Link the Glide.js CSS stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <!-- Link on the Swipey CSS stylesheet-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation bar -->
+    <nav class="bg-yellow-500 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between">
+                <div class="flex items-center">
+                    <a href="#" class="font-serif text-black font-bold text-xl">Caleb's Famous Recipe</a>
+                </div>
+                <input class="w-64 h-10 pl-10 pr-2 rounded-full border border-gray-500 focus:outline-none focus:border-blue-500" type="text" placeholder="Search for food">
+                <div class="flex items-center">
+                    <a href="#" class="text-black hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium">Recipes</a>
+                    <a href="#" class="text-black hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="#" class="text-black hover:text-yellow-200 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-cover bg-center bg-image" style="background-image: url('../MYRECIPEBOOK/image.jpg');">
+      <div class="container mx-auto py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-4">
+              <!-- Slideshow -->
+              <div class="col-span-2">
+                  <div class="glide">
+                      <div class="glide__track" data-glide-el="track">
+                          <ul class="glide__slides space-x-4 space-x-reverse">
+                              <li class="glide__slide"><img src="http://www.foodies.ph/_recipeimage/267792/kare-kare-1.jpg" alt="Recipe 1" class="w-full h-full object-cover"></li>
+                              <li class="glide__slide"><img src="https://api.lifegetsbetter.ph/uploads/recipes/featured/TokwatBaboy.jpg" alt="Recipe 2" class="w-full h-full object-cover"></li>
+                              <li class="glide__slide"><img src="https://images.deliveryhero.io/image/foodpanda/recipes/bicol-express-recipe-1.jpg" alt="Recipe 3" class="w-full h-full object-cover"></li>                          
+                          </ul>
+                          <ul>
+                              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+                              <div class="bg-yellow-500 rounded-lg overflow-hidden shadow-lg">
+                                <img class="w-full h-64 object-cover object-center" src="https://www.lifestyleampoule.com/wp-content/uploads/2021/10/Photo_16346636238421-scaled.jpg" alt="Recipe image">
+                                <div class="p-4">
+                                  <h2 class="text-lg font-medium mb-2">People's Choice Award Recipe</h2>
+                                  <p class="text-gray-600 text-sm mb-4">Caleb's Beef Steak with 28.7k votes.</p>
+                                  <p class="text-black-700 mb-4">Beef steak can be incredibly flavorful when cooked properly. The flavor comes from the marbling (fat) within the meat, which melts and adds richness to the steak as it cooks. Additionally, the Maillard reaction, which is a chemical reaction between amino acids and sugars that occurs when the meat is seared at high heat, creates a delicious brown crust on the outside of the steak that adds depth and complexity to the flavor.
+
+                                    The flavor of a beef steak can also be influenced by the cut of meat that is used. Cuts like ribeye and sirloin are generally more flavorful due to their higher fat content and tenderness. Other factors that can affect the flavor of a beef steak include the quality of the meat, the seasoning used, and the cooking method.
+                                    
+                                    Overall, a well-prepared beef steak can be incredibly flavorful and satisfying, making it a popular dish for meat lovers around the world.</p>
+                                <!-- <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-200">Read More</a> -->
+                                </div>
+                              </ul>
+
+                                
+                              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+                              <div class="bg-yellow-600 rounded-lg overflow-hidden shadow-lg">                          
+                                <div class="w-full max-w-md p-4 bg-yellow-500 border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                                  <div class="flex items-center justify-between mb-4">
+                                  <h5 class="text-xl font-bold leading-none text-gray-900 dark:text-white">Recent Recipe Feedbacks</h5>
+                                   <a href="#" class="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                                </a>
+                              </div>
+                              <div class="flow-root">
+                                <ul role="list" class="divide-y bg-yellow-500 divide-black dark:divide-black">
+                                    <li class="py-3 sm:py-4">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="flex-shrink-0">
+                                                <img class="w-8 h-8 rounded-full" src="https://api.time.com/wp-content/uploads/2017/02/john-wick-2-keanu-reeves1.jpg" alt="Neil image">
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <p class="text-sm font-medium text-gray-900 truncate dark:text-white hover:text-blue-500">
+                                                    John Wick
+                                                </p>
+                                                <p class="text-sm text-black-500 truncate dark:text-gray-400">
+                                                    Adobo Recipe is very good!
+                                                </p>
+                                            </div>
+                                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                                10/10
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="py-3 sm:py-4">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="flex-shrink-0">
+                                                <img class="w-8 h-8 rounded-full" src="https://images.mubicdn.net/images/cast_member/499823/cache-587716-1600297708/image-w856.jpg?size=800x" alt="Bonnie image">
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <p class="text-sm font-medium text-black-900 truncate dark:text-white hover:text-blue-500">
+                                                    Peter Parker
+                                                </p>
+                                                <p class="text-sm text-black-500 truncate dark:text-gray-400">
+                                                    the chicken curry is good I added a little bit of my recipe :>
+                                                </p>
+                                            </div>
+                                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                                9/10
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="py-3 sm:py-4">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="flex-shrink-0">
+                                                <img class="w-8 h-8 rounded-full" src="https://i.insider.com/5f47e7c9cd2fec00296a497a?width=1000&format=jpeg&auto=webp" alt="Michael image">
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <p class="text-sm font-medium text-black-900 truncate dark:text-white hover:text-blue-500">
+                                                    Professor Snape
+                                                </p>
+                                                <p class="text-sm text-black-500 truncate dark:text-gray-400">
+                                                    The Pork Sisig is Sizzling I like it..
+                                                </p>
+                                            </div>
+                                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                                5/10
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="py-3 sm:py-4">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="flex-shrink-0">
+                                                <img class="w-8 h-8 rounded-full" src="https://i.ytimg.com/vi/i8bhMsaR6cs/maxresdefault.jpg" alt="Lana image">
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <p class="text-sm font-medium text-black-900 truncate dark:text-white hover:text-blue-500">
+                                                    Optimus Prime
+                                                </p>
+                                                <p class="text-sm text-black-500 truncate dark:text-gray-400">
+                                                    Loving the Caldereta even though Im a robot.
+                                                </p>
+                                            </div>
+                                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                                9/10
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="pt-3 pb-0 sm:pt-4">
+                                        <div class="flex items-center space-x-4">
+                                            <div class="flex-shrink-0">
+                                                <img class="w-8 h-8 rounded-full" src="https://staticg.sportskeeda.com/editor/2022/06/1acf7-16544386413156-1920.jpg" alt="Thomas image">
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <p class="text-sm font-medium text-black-900 truncate dark:text-white hover:text-blue-500">
+                                                    Kakashi Hatake
+                                                </p>
+                                                <p class="text-sm text-black-500 truncate dark:text-gray-400">
+                                                    The Beef Steak is the best recipe Ive ever copied.
+                                                </p>
+                                            </div>
+                                            <div class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                                                10/10
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                              </div>
+                              </div>
+                              </div>
+                              </div>  
+                            </a>         
+                        </ul>    
+                      </div>
+                    </div>
+                  </div>
+
+              <!-- Recipe cards -->
+              <div class="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
+                  <!-- CHICKEN ADOBO -->
+                  <div class="bg-yellow-200 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-1 hover:scale-110 hover:shadow-x1 transition duration-300">
+                      <img src="https://www.foxyfolksy.com/wp-content/uploads/2014/03/Filipino-Adobo.jpg" alt="Recipe" class="w-full h-48 object-cover">
+                      <div class="p-4">
+                        <a href="../MYRECIPEBOOK/Adobo.html" class="text-2xl font-bold mb-2 hover:text-yellow-500">Chicken Adobo</a>
+                        <p class="text-gray-700 text-base">I urge you to give Caleb's Chicken Adobo a try. Not only is it a delicious and satisfying dish, but it is also versatile, healthy, and easy to prepare. So next time you're looking for a meal that is sure to impress, remember to try Caleb's Chicken Adobo.</p>
+                    </div>
+                </div>
+              
+                <!-- CHICKEN CURRY -->
+                <div class="bg-yellow-200 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-1 hover:scale-110 hover:shadow-xl transition duration-300">
+                    <img src="https://swatisani.net/kitchen/wp-content/uploads/2014/09/IMG_8002.jpg" alt="Recipe"  class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <a href="../MYRECIPEBOOK/chickencurry.html" class="text-2xl font-bold mb-2 hover:text-yellow-500">Chicken Curry</a>
+                        <br>
+                        <p class="text-gray-700 text-base">the best thing about Caleb's Chicken Curry is how easy it is to make. While it may seem like a complex and time-consuming dish, with a little bit of preparation, you can have a delicious curry on the table in no time. And because it is such a versatile dish, you can make a big batch and enjoy it for several meals.</p>
+                    </div>
+                </div>
+                <!-- PORK SISIG  -->
+                <div class="bg-yellow-200 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-1 hover:scale-110 hover:shadow-xl transition duration-300">
+                    <img src="https://www.unileverfoodsolutions.com.ph/dam/global-ufs/mcos/SEA/calcmenu/recipes/PH-recipes/appetisers/sizzling-pork-sisig-manila/sizzling-pork-sisig-manila-main.jpg" alt="Recipe" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                      <a href="../MYRECIPEBOOK/porksisig.html" class="text-2xl font-bold mb-2 hover:text-yellow-500">Pork Sisig</a>
+                        <p class="text-gray-700 text-base"> Caleb's Pork Sisig is a great dish for sharing. It is often served on a sizzling hot plate, which not only adds to the visual appeal of the dish, but also keeps it hot and fresh. This makes it a great dish to share with friends and family, as everyone can enjoy the flavors and aromas of the dish together.</p>
+                    </div>
+                </div>
+                <!-- PORK HUMBA -->
+                <div class="bg-yellow-200 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-1 hover:scale-110 hover:shadow-xl transition duration-300">
+                    <img src="https://russianfilipinokitchen.files.wordpress.com/2014/07/dsc_0628.jpg" alt="Recipe" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                      <a href="../MYRECIPEBOOK/porkhumba.html" class="text-2xl font-bold mb-2 hover:text-yellow-500">Pork Humba</a>
+                        <p class="text-gray-700 text-base">Pork Humba is made by simmering pork belly in a mixture of soy sauce, vinegar, sugar, and other spices such as garlic, onion, and black pepper. The dish is then slow-cooked until the pork becomes tender and infused with the rich flavors of the sauce. Some recipes even call for the addition of boiled eggs, which adds a unique flavor and texture to the dish..</p>
+                    </div>
+                </div>
+                  <!-- BEEF CALDERETA -->
+                <div class="bg-yellow-200 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-1 hover:scale-110 hover:shadow-xl transition duration-300">
+                  <img src="https://speedyrecipe.com/wp-content/uploads/2016/09/Filipino-Beef-Kaldereta-Recipe.jpg" alt="Recipe" class="w-full h-48 object-cover">
+                  <div class="p-4">
+                    <a href="../MYRECIPEBOOK/beefcaldereta.html" class="text-2xl font-bold mb-2 hover:text-yellow-500">Beef Caldereta</a>
+                      <p class="text-gray-700 text-base">One of the things I love about Beef Caldereta is its complex and delicious flavor profile. The combination of tangy, sweet, and savory flavors creates a dish that is truly irresistible. And because the beef is slow-cooked in the sauce, it becomes incredibly tender and flavorful, making it a true delight to eat.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    
+    <br>
+    
+    <footer class="bg-yellow-500 py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between">
+        <div class="text-black-400">
+          <p>&copy; 2023 Caleb's Online Recipe All rights reserved.</p>
+        </div>
+        <div>
+          <a href="#" class="text-black-400 hover:text-yellow-200 ml-4">About Us</a>
+          <a href="../MYRECIPEBOOK/index.html" class="text-black-400 hover:text-yellow-200 ml-4">Home</a>
+          <a href="#" class="text-black-400 hover:text-yellow-200 ml-4">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    </footer>
+  </div>
+</div>
+
+  
+  <!-- Link the Glide.js JavaScript library -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize the Glide.js slider -->
+  <script> 
+  
+      new Glide('.glide',    
+    {
+        type: 'carousel',
+        startAt: 0,
+        perView: 1,
+        autoplay: 3000
+    }).mount();
+
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      grabCursor: true,
+      centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</script>
+
+</body>
+</html>
+
+
+  
